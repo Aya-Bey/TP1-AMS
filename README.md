@@ -15,8 +15,7 @@
 
 Le fichier `pom.xml` est le fichier de configuration du projet Maven. Il permet de déclarer les dépendances nécessaires à la compilation et à l’exécution de l’application, notamment celles du framework Spring.
 
-
-![Vérification du fichier pom.xml](images/pom.xml.png)
+![Vérification du fichier pom.xml](Images/pom.xml.png)
 
 ---
 
@@ -42,9 +41,9 @@ Le projet est organisé en trois packages principaux :
 - `metier` : logique métier.
 - `presentation` : lancement et test des différentes approches.
 
-Le dossier `src/main/resources` contient les fichiers de configuration. Le dossier `images` contient les cinq captures d’écran du projet.
+Le dossier `src/main/resources` contient les fichiers de configuration. Le dossier `Images` contient les captures d’écran du projet.
 
-![Structure du projet](images/la structure.png)
+![Structure du projet](Images/la structure.png)
 
 ---
 
@@ -117,7 +116,6 @@ package presentation;
 
 import dao.DaoIMP;
 import dao.IDao;
-import metier.IMetier;
 import metier.MetierIMP;
 
 public class PresentationStatique {
@@ -140,7 +138,7 @@ public class PresentationStatique {
 
 **Question 10 — Le principe IoC est-il respecté ?**
 
-Il n’est que partiellement respecté : la dépendance est injectée de l’extérieur de `MetierIMP`, mais la classe de présentation crée elle-même les objets.
+Il est partiellement respecté : la dépendance est injectée de l’extérieur de `MetierIMP`, mais la classe de présentation crée elle-même les objets.
 
 **Question 11 — Comment éviter que la présentation contrôle la création des objets ?**
 
@@ -152,7 +150,7 @@ La création et l’assemblage des objets peuvent être confiés à un conteneur
 21.0
 ```
 
-![Activité 1-1 : injection statique](images/activité-1-1.png)
+![Activité 1-1 : injection statique](Images/activité-1-1.png)
 
 ---
 
@@ -230,7 +228,7 @@ Cette méthode améliore la flexibilité et permet de changer la configuration s
 21.0
 ```
 
-![Activité 1-2 : injection dynamique](images/activité-1-2.png)
+![Activité 1-2 : injection dynamique](Images/activité-1-2.png)
 
 ---
 
@@ -297,7 +295,7 @@ Spring lit `config.xml`, crée les beans déclarés et injecte le bean `dao` dan
 21.0
 ```
 
-![Activité 1-3 : injection Spring XML](images/activité-1-3.png)
+![Activité 1-3 : injection Spring XML](Images/activité-1-3.png)
 
 ---
 
@@ -386,7 +384,7 @@ Les annotations réduisent le besoin de déclarer les beans dans un fichier XML.
 21.0
 ```
 
-![Activité 1-4 : injection par annotations](images/activité-1-4.png)
+![Activité 1-4 : injection par annotations](Images/activité-1-4.png)
 
 ---
 
